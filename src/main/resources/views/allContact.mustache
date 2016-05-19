@@ -1,0 +1,37 @@
+		<html>
+			<head>
+				<title>Contact</title>
+			</head>
+			<body>
+			TERE!
+			Siin on kontaktide nimekiri:
+			<br><br>
+			
+			{{#contacts}}
+			
+				<table border="1">
+					{{#.}}
+					<tr>
+						<th colspan="2">Contact {{id}}</th>
+					</tr>
+					<tr>
+						<td>First Name</td>
+						<td>{{firstName}}</td>
+					</tr>
+					<tr>
+						<td>Last Name</td>
+						<td>{{lastName}}</td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>{{phone}}</td>
+					</tr>
+					{{/.}}
+				</table>
+				
+			{{/contacts}}
+			</body>
+		</html>
+		
+		
+	
